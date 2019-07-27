@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Shelley Balls, RDN- About Me</title>
+    <meta name="description" content="Explore Registered Dietitian Nutritionist Shelley Balls experience, education and hobbies.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--This makes the website display fit the screen when you open it.-->
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<!--css-->
+	<link rel="stylesheet" href="css/aboutme.css">
+	<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!--header--> 
+	<div id="container">
+	   <a href="index.html"><h1>Shelley Balls- Registered Dietitian Nutritionist</h1></a>
+	<h4>Fueling Your Lifestyle</h4>
+	<div id="topbar">
+		<div class="fixwidth">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/sheap3?ref=bookmarks"><img src="images/facebook.png" alt="Picture of Facebook icon"/></a></li>
+                <li><a href="https://www.instagram.com/sballs17/?hl=en"><img src="images/instagram.png" alt="Picture of Instagram icon"/></a></li>
+                <li><a href="https://www.pinterest.com/sballs17/"><img src="images/pinterest.png" alt="Picture of Pinterest icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/shelley-balls-rdn-ldn-65156aa8/"><img src="images/linkedin.png" alt="Picture of LinkedIn icon"/></a></li>
+            </ul>
+        </div>
+	<!--/header-->
+	<!--nav-->
+			 <div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="successstories.html">Success Stories</a>
+              <a href="contact.html">Contact</a>
+              <a href="recipes.html">Recipes</a>
+              <a href="aboutme.html" class="active">About Me</a>
+              <a href="blog.html">Blog</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <input type="text" id="searchbar" placeholder=Search>
+            </div>
+		</div>
+	</div>
+<div class="heading">
+  <img src="images/murphy.jpg" id="murphy" alt="Image of mountain lake Shelley took">
+  <div class="centered">About Me</div>
+</div>
+<div id="content">
+    <h2>Education</h2>
+        <img src="images/education.jpeg" id="education" alt="Picture of Shelley with diploma" class="responsive">
+        <p>Shelley grew up in Evanston Wyoming and graduated from Evanston High School in 2012. She then moved to Logan Utah to attend Utah State University in the fall of 2012. Shelley studied nutrition and dietetics at Utah State University, and graduated with her bachelors in 2017, with a business minor. She then studied for the Registered Dietitian Exam, and passed it in September of 2017 while working at the local summer food service program in Lincoln County in Wyoming.</p>
+        <p>Shelley took a year off of school and decided she wanted to go back to school to obtain a Master of Dietetic Adminstration degree to better prepare her for future opportunities that may come her way. This program was offered online through Utah State University which allowed her to continue working fulltime as she completed her school work. In December of 2019 Shelley will graduate with her Master of Dietetic Administration through Utah State University.</p> 
+	<h2>Experience</h2>
+        <img src="images/chopping.jpg" id="chopping" alt="Picture of Shelley chopping vegetables" class="responsive1">
+        <p>Ever since Shelley graduated from Utah State with her bachelors she has been praticing community nutrition. Her first experience was working with the local school district for the Summer Food Service Program in the summer of 2017. She then started working for the University of Wyoming Extension Cent$ible Nutrition Program and a nutrition educator. She is currently still at this position covering North Lincoln, Sublette and Teton Counties. Her work includes planning, and providing direct education to low-income adults and youth, and reporting outcomes. She also is working within the communities with policy, system and environmental projects such as with local food pantries.<br>
+        <br>During her dietetics program Shelley received experience in clinical nutrition, food service, research, and community nutrition. Her dietetics program provided her with a lot of great experience in foodservice, and clinical nutrition, qhich were two areas of dietetics she thought she would go into, but she has since then enjoyed working with community nutrition. Never the less she is open to new learning experiences and opportunities that may come her way in the future. 
+        </p>
+	<h2>Hobbies</h2>
+	    <img src="images/snow.jpeg" id="hobbies" alt="Picture of Shelley on her snowmobile" class="responsive">
+        <p>Shelley enjoys spending time outdoors with her family and friends. Some of her hobbies include hiking, motorbiking, riding horses, mountain biking, snowshoeing, paddle boarding, snowmobiling, camping, and fishing. Shelley and her family currently live in a place where she can access the mountains within minutes of thier home. She is also a hobby photographer and would like to one day take a photography class to learn how to take scenic and wildlife photographs. 
+        </p>
+</div>
+<!--footer--> 
+	<div id="bottommenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+				<li><a href="successstories.html">Success Stories</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="recipes.html">Recipes</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+    </div>
+<script>
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } 
+    else {li[i].style.display = "none";
+        }
+    }
+}
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>     
+</body>
+</html>

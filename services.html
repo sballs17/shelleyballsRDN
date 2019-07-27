@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Shelley Balls, RDN- Services</title>
+    <meta name="description" content="Meet with Registered Dietitian Nutritionist Shelley Balls in-person or online and attend classes to help you perform to the best of your ability at work, in school, sports, or other hobbies.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<!--css-->
+	<link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!--header--> 
+	<div id="container">
+	   <a href="index.html"><h1>Shelley Balls- Registered Dietitian Nutritionist</h1></a>
+	<h4>Fueling Your Lifestyle</h4>
+	<div id="topbar">
+		<div class="fixwidth">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/sheap3?ref=bookmarks"><img src="images/facebook.png" alt="Picture of Facebook icon"/></a></li>
+                <li><a href="https://www.instagram.com/sballs17/?hl=en"><img src="images/instagram.png" alt="Picture of Instagram icon"/></a></li>
+                <li><a href="https://www.pinterest.com/sballs17/"><img src="images/pinterest.png" alt="Picture of Pinterest icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/shelley-balls-rdn-ldn-65156aa8/"><img src="images/linkedin.png" alt="Picture of LinkedIn icon"/></a></li>
+            </ul>
+        </div>
+	<!--/header-->
+	<!--nav-->
+            <div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="services.html" class="active">Services</a>
+              <a href="successstories.html">Success Stories</a>
+              <a href="contact.html">Contact</a>
+              <a href="recipes.html">Recipes</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="blog.html">Blog</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <input type="text" id="searchbar" placeholder=Search>
+            </div>
+		</div>
+	</div>
+    <div id="content">
+	   <h2>You Choose</h2>
+	   <h3>Individual Appointments</h3>
+	       <p> If you prefer a private one-on-one counseling session this is the service you may prefer. We can either meet in person at my office in Star Valley or over the internet via Zoom.</p>
+            <a href="online.html" class="button1">Online</a>
+            <a href="inperson.html" class="button2">In Person</a>
+	   <h3> Online Classes</h3>
+	       <p>The online class series allows individuals to go through the material at their own availability. The classes are interactive and include activities for you to try along the way. 
+	   <h3>How To Videos</h3>
+	       <p> These how to videos may help you practice what you have learned in the class series and provide you with the tips and tricks that will help you be more successful in your journey.</p>
+	   <div class="row">
+  		<div class="column">
+            <video controls>
+                <source src="images/germs_demonstration.mp4" type="video/mp4">
+                <source src="images/germs_demonstration.ogg" type="video/ogg">
+            </video>
+            How germs pass through unwashed vegetables and fruits
+  		</div>
+  		<div class="column">
+            <video controls>
+                <source src="images/saute_demonstration.mp4" type="video/mp4">
+                <source src="images/saute_demonstration.ogg" type="video/ogg">
+            </video>
+             How to Steam Vegetables
+  		</div>
+        <div class="column">
+   			<video controls>
+                <source src="images/roasted_vegetables.mp4" type="video/mp4">
+                <source src="images/roasted_vegetables.ogg" type="video/ogg">
+            </video>
+            How to Roast Vegetables
+  		</div>
+       </div>
+    </div>
+<!--footer--> 
+	<div id="bottommenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+				<li><a href="successstories.html">Success Stories</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="recipes.html">Recipes</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+    </div>
+<script>
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } 
+    else {li[i].style.display = "none";
+        }
+    }
+}
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+</body>
+</html>

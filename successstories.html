@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Shelley Balls, RDN- Success Stories</title>
+    <meta name="description" content="Learn how Shelley Balls Registered Dietitian Nutritionist has helped many others reach their nutrition goals.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<!--css-->
+	<link rel="stylesheet" href="css/successstories.css">
+	<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!--header--> 
+	<div id="container">
+	   <a href="index.html"><h1>Shelley Balls- Registered Dietitian Nutritionist</h1></a>
+	<h4>Fueling Your Lifestyle</h4>
+	<div id="topbar">
+		<div class="fixwidth">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/sheap3?ref=bookmarks"><img src="images/facebook.png" alt="Picture of Facebook icon"/></a></li>
+                <li><a href="https://www.instagram.com/sballs17/?hl=en"><img src="images/instagram.png" alt="Picture of Instagram icon"/></a></li>
+                <li><a href="https://www.pinterest.com/sballs17/"><img src="images/pinterest.png" alt="Picture of Pinterest icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/shelley-balls-rdn-ldn-65156aa8/"><img src="images/linkedin.png" alt="Picture of LinkedIn icon"/></a></li>
+            </ul>
+        </div>
+	<!--/header-->
+	<!--nav-->
+			<div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="successstories.html" class="active">Success Stories</a>
+              <a href="contact.html">Contact</a>
+              <a href="recipes.html">Recipes</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="blog.html">Blog</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <input type="text" id="searchbar" placeholder=Search>
+            </div>	
+		</div>
+	</div>
+    <h2>Success Stories</h2>
+<div id="content">
+    <table style="width:100%">
+        <tr>
+            <td>"I didn't know I could eat healthier until I met with Shelley, she has taught me so much!"</td>
+            <td>"I have found a lot of recipes on this website that my family and I really enjoy!"</td>
+            <td>"The online classes have helped me banish any nutrition myths I have heard."</td>
+        </tr>
+        <tr>
+            <td>"I am eating more healthful foods, and losing weight without starving myself!"</td>
+            <td>"My family and I now know how to check to see if the foods we are buying are nutritious."</td>
+            <td>"I wasn't sure about having an individual appointment via my computer but it was really convenient, because I didn't have to leave the house."</td>
+        </tr>
+        <tr>
+            <td>"You have taught me how important it is to read food labels."</td>
+            <td>"Shelley has taught me what foods will help prevent chronic disease."</td>
+            <td>"With Shelley's help my meals have become more appetizing, and I now include a lot of variety in my diet!"</td>
+        </tr>
+    </table>
+</div>
+<!--footer--> 
+	<div id="bottommenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+				<li><a href="successstories.html">Success Stories</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="recipes.html">Recipes</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</div>
+<script>
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } 
+    else {li[i].style.display = "none";
+        }
+    }
+}
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+</body>
+</html>
